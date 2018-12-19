@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_4dc538b209b746988e9dbdbad0889dc9 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_4dc538b209b746988e9dbdbad0889dc9" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_4dc538b209b746988e9dbdbad0889dc9 = L.map(
+        'map_4dc538b209b746988e9dbdbad0889dc9', {
+        center: [40.7128, -74.006],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_e2b15303beff47338de3e43cc4c48e6d = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+    
+        var marker_d1dd9bb9f5fe44f58c8b8ab76fcb0080 = L.marker(
+            [40.62772995, -73.93508353],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d1dd9bb9f5fe44f58c8b8ab76fcb0080.bindTooltip(
+            `<div>`
+            + `THEFT-FRAUD` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e7dfb929099c495c8d0edf9136d71493 = L.marker(
+            [40.613214764, -73.950131412],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e7dfb929099c495c8d0edf9136d71493.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1d136b590c074b7e84f0c1209db590de = L.marker(
+            [40.593548201, -74.066326401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_1d136b590c074b7e84f0c1209db590de.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_51a8861916914625a4566c98d30ad811 = L.marker(
+            [40.635114113, -74.13157748],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_51a8861916914625a4566c98d30ad811.bindTooltip(
+            `<div>`
+            + `THEFT-FRAUD` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e966d2a859194f93a960f6f2fb01f44a = L.marker(
+            [40.693402644, -73.919408798],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e966d2a859194f93a960f6f2fb01f44a.bindTooltip(
+            `<div>`
+            + `FRAUDS` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_448e1a100cf94bbc897ee2e1be73283f = L.marker(
+            [40.663500558, -73.926873758],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_448e1a100cf94bbc897ee2e1be73283f.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0409f1c83e2041d7b68ca7e75a8cb562 = L.marker(
+            [40.746178556, -73.984122057],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_0409f1c83e2041d7b68ca7e75a8cb562.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ebff0e4a52aa49dcb2f18e4e711f367c = L.marker(
+            [40.610189458, -73.990669692],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_ebff0e4a52aa49dcb2f18e4e711f367c.bindTooltip(
+            `<div>`
+            + `THEFT-FRAUD` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_eb9d22fed1d44d319d092fa271b71e8b = L.marker(
+            [40.665953833, -73.89141248199999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_eb9d22fed1d44d319d092fa271b71e8b.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_522c637727d04a338f8863db7391308b = L.marker(
+            [40.651228906, -73.881151147],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_522c637727d04a338f8863db7391308b.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_210ff61b77fd49e883b84635a7d9d36a = L.marker(
+            [40.690080972, -73.960559932],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_210ff61b77fd49e883b84635a7d9d36a.bindTooltip(
+            `<div>`
+            + `SEX CRIMES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d0cc05ad58724ecfa585f2517f911e8a = L.marker(
+            [40.748513777, -73.812495213],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d0cc05ad58724ecfa585f2517f911e8a.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_eef075acd721447f9135dc2b297f45ad = L.marker(
+            [40.804428073000004, -73.95537021],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_eef075acd721447f9135dc2b297f45ad.bindTooltip(
+            `<div>`
+            + `CRIMINAL MISCHIEF & RELATED OF` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d6dcaf4f551340f09104aaec1e8718b7 = L.marker(
+            [40.750420043000005, -73.803459652],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d6dcaf4f551340f09104aaec1e8718b7.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7832dcea49a240e092b1517b7dae3477 = L.marker(
+            [40.839084494, -73.863193715],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_7832dcea49a240e092b1517b7dae3477.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9c96c11cf3f54d8f931b519be09820ee = L.marker(
+            [40.853823567, -73.907332598],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_9c96c11cf3f54d8f931b519be09820ee.bindTooltip(
+            `<div>`
+            + `CRIMINAL MISCHIEF & RELATED OF` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6ce44fa9059f44a396e8f516e8794bbc = L.marker(
+            [40.782353785, -73.952460165],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_6ce44fa9059f44a396e8f516e8794bbc.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_926e3baa8ed44a5cbf0a546bf8bfceed = L.marker(
+            [40.689393691, -73.909868877],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_926e3baa8ed44a5cbf0a546bf8bfceed.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7d84c66b5886471889302576fa8c0499 = L.marker(
+            [40.71691829, -73.872239243],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_7d84c66b5886471889302576fa8c0499.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4a5a6ab274784c019b984631a396d975 = L.marker(
+            [40.652723097, -73.88215037],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_4a5a6ab274784c019b984631a396d975.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ef45ae4d869149d7aac4b186d724d6d8 = L.marker(
+            [40.714060101, -73.990200647],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_ef45ae4d869149d7aac4b186d724d6d8.bindTooltip(
+            `<div>`
+            + `CRIMINAL MISCHIEF & RELATED OF` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_50c5fd6224414a989afa2a99202ed97e = L.marker(
+            [40.88311992, -73.90332096899999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_50c5fd6224414a989afa2a99202ed97e.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b026cb727bbb4bbeaa9fcb8b4226deee = L.marker(
+            [40.644931708, -73.946032176],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_b026cb727bbb4bbeaa9fcb8b4226deee.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7367aa4324a8401cb27f4fc3b0c16ecf = L.marker(
+            [40.681737259, -73.85492467600001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_7367aa4324a8401cb27f4fc3b0c16ecf.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4583532c12684feca062272b8c9e5531 = L.marker(
+            [40.859975404000004, -73.905133257],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_4583532c12684feca062272b8c9e5531.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5ea1d7744f60424b98e6a0c5368c6af2 = L.marker(
+            [40.750186000999996, -73.811223685],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_5ea1d7744f60424b98e6a0c5368c6af2.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d55f576c701a4ff2854b5c302bcdb7c2 = L.marker(
+            [40.740344615, -73.85148072300001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d55f576c701a4ff2854b5c302bcdb7c2.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ddb85684c4434ecf98af56667818b312 = L.marker(
+            [40.65257276, -73.951219199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_ddb85684c4434ecf98af56667818b312.bindTooltip(
+            `<div>`
+            + `PETIT LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_90aa54a676944790820f4e50be9f6ceb = L.marker(
+            [40.680347223000005, -73.930035241],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_90aa54a676944790820f4e50be9f6ceb.bindTooltip(
+            `<div>`
+            + `MISCELLANEOUS PENAL LAW` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f19b8597707e47898ea0df814e98a158 = L.marker(
+            [40.716507721999996, -73.983919899],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_f19b8597707e47898ea0df814e98a158.bindTooltip(
+            `<div>`
+            + `SEX CRIMES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1a225123c4984cf5af4f0345770fa7e9 = L.marker(
+            [40.646792071, -74.022916587],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_1a225123c4984cf5af4f0345770fa7e9.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c84e159a8833481586d8d07157114496 = L.marker(
+            [40.861701846, -73.901880709],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_c84e159a8833481586d8d07157114496.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e33ce7acd9784fa39d8685ed9f88daa0 = L.marker(
+            [40.699812809, -73.773956586],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e33ce7acd9784fa39d8685ed9f88daa0.bindTooltip(
+            `<div>`
+            + `PETIT LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b0dd9799347e4c3b973bc30c801990fc = L.marker(
+            [40.771771583, -73.770838501],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_b0dd9799347e4c3b973bc30c801990fc.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ae145b312b6942eeb2155ebc2fdbbc7d = L.marker(
+            [40.697867447, -73.930608295],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_ae145b312b6942eeb2155ebc2fdbbc7d.bindTooltip(
+            `<div>`
+            + `ARSON` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d8d24868467244e091dd92dbe4b78775 = L.marker(
+            [40.893218873, -73.859176009],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d8d24868467244e091dd92dbe4b78775.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b53269bbfd7f4a41977947c7c5412a4b = L.marker(
+            [40.845934652, -73.90655204],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_b53269bbfd7f4a41977947c7c5412a4b.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_231b538310ef405c9a2c484d86e84389 = L.marker(
+            [40.775370152, -73.964917885],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_231b538310ef405c9a2c484d86e84389.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_abb5e33bfe30453780ac4eab28b630bb = L.marker(
+            [40.837323511, -73.919830757],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_abb5e33bfe30453780ac4eab28b630bb.bindTooltip(
+            `<div>`
+            + `SEX CRIMES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e72b54c1263d4367b8e8a04c15890e53 = L.marker(
+            [40.693233148000004, -73.995504655],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e72b54c1263d4367b8e8a04c15890e53.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c88661bffd134ca7805c0c6bb1bc9deb = L.marker(
+            [40.577837979, -73.846003102],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_c88661bffd134ca7805c0c6bb1bc9deb.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6a289897294f430fbd1a5b95d4b41e56 = L.marker(
+            [40.755112875, -73.866131004],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_6a289897294f430fbd1a5b95d4b41e56.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_404af705494646699b1b98312a4addbb = L.marker(
+            [40.692556293, -73.858637008],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_404af705494646699b1b98312a4addbb.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_884bbed091fd4c969c4b5be1a82505cb = L.marker(
+            [40.771446921999996, -73.911761558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_884bbed091fd4c969c4b5be1a82505cb.bindTooltip(
+            `<div>`
+            + `DANGEROUS WEAPONS` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6baf04b57cbb4a54b931eebb021223aa = L.marker(
+            [40.743382800999996, -73.92055729100001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_6baf04b57cbb4a54b931eebb021223aa.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e5f50e02aa62462a82d0604d12db9b93 = L.marker(
+            [40.75506923, -73.987671622],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e5f50e02aa62462a82d0604d12db9b93.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_03eb16c051254bbc96ae994674a1c768 = L.marker(
+            [40.756874911, -73.970544057],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_03eb16c051254bbc96ae994674a1c768.bindTooltip(
+            `<div>`
+            + `SEX CRIMES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_001a7c9d711641c78a06e1ebfba1db42 = L.marker(
+            [40.818158403000005, -73.903538178],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_001a7c9d711641c78a06e1ebfba1db42.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d21a225d32054677b928c9fcee1c3b13 = L.marker(
+            [40.876820722, -73.858060837],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d21a225d32054677b928c9fcee1c3b13.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d7773eb74d314731b42044230a7fd73c = L.marker(
+            [40.75905348, -73.880319853],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d7773eb74d314731b42044230a7fd73c.bindTooltip(
+            `<div>`
+            + `FRAUDS` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_157c7c88821f42c69f3d51c964abe4fc = L.marker(
+            [40.70516604, -73.834156587],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_157c7c88821f42c69f3d51c964abe4fc.bindTooltip(
+            `<div>`
+            + `MISCELLANEOUS PENAL LAW` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_21ba62bd87e74b6294a951253a0c34a4 = L.marker(
+            [40.766025962, -73.985243655],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_21ba62bd87e74b6294a951253a0c34a4.bindTooltip(
+            `<div>`
+            + `BURGLARY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7b09e5c9f4344fa0b2ccb28a270a58c6 = L.marker(
+            [40.799086317, -73.947619211],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_7b09e5c9f4344fa0b2ccb28a270a58c6.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0a27e10843524fbc8199af0213c26085 = L.marker(
+            [40.629666551, -73.924122376],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_0a27e10843524fbc8199af0213c26085.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f67736b450764d999506defcad1097ad = L.marker(
+            [40.83469937, -73.942495779],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_f67736b450764d999506defcad1097ad.bindTooltip(
+            `<div>`
+            + `PETIT LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ccab9c5f8a204d298a8eea54f85d3d4e = L.marker(
+            [40.741506303, -73.97973860100001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_ccab9c5f8a204d298a8eea54f85d3d4e.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fbdb39518e9044f9bfc22cca2e93b75e = L.marker(
+            [40.666657115999996, -73.892070988],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_fbdb39518e9044f9bfc22cca2e93b75e.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_45a9bb4ad5a74497a58625e597f0497f = L.marker(
+            [40.684713656999996, -73.944186351],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_45a9bb4ad5a74497a58625e597f0497f.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_54fddf68c3d1476d97c61bdb277201b8 = L.marker(
+            [40.775041983, -73.98206801399999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_54fddf68c3d1476d97c61bdb277201b8.bindTooltip(
+            `<div>`
+            + `PETIT LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fb983b1c61da4dd4ae3e11010bba5ac1 = L.marker(
+            [40.70754637, -74.013776048],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_fb983b1c61da4dd4ae3e11010bba5ac1.bindTooltip(
+            `<div>`
+            + `THEFT-FRAUD` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e2700301ae104793820db321df8737eb = L.marker(
+            [40.669058206, -73.910581264],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e2700301ae104793820db321df8737eb.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_502250db630c4a2ab96cae155699bb10 = L.marker(
+            [40.732217062, -73.800417501],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_502250db630c4a2ab96cae155699bb10.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5b0d941f995241599beab2003b57acd9 = L.marker(
+            [40.857454424000004, -73.847542764],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_5b0d941f995241599beab2003b57acd9.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_14028c9c82fc4f659b3214461ebee298 = L.marker(
+            [40.773206246, -73.985577834],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_14028c9c82fc4f659b3214461ebee298.bindTooltip(
+            `<div>`
+            + `FELONY ASSAULT` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e4b0ab7e29704d73af7118668230aa9a = L.marker(
+            [40.657678426, -73.926166515],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e4b0ab7e29704d73af7118668230aa9a.bindTooltip(
+            `<div>`
+            + `FELONY ASSAULT` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9b8fd040909a41519da5a7d48757341e = L.marker(
+            [40.578267231999995, -73.972325564],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_9b8fd040909a41519da5a7d48757341e.bindTooltip(
+            `<div>`
+            + `CRIMINAL MISCHIEF & RELATED OF` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e2337e45f7a34b99b933006d280572ea = L.marker(
+            [40.769723638, -73.98998306600001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_e2337e45f7a34b99b933006d280572ea.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4f76771a0ec3475fb03044748991efb1 = L.marker(
+            [40.791151866999996, -73.884371919],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_4f76771a0ec3475fb03044748991efb1.bindTooltip(
+            `<div>`
+            + `OFFENSES AGAINST PUBLIC ADMINI` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_85a663b109e245778683833598462f81 = L.marker(
+            [40.686090584, -73.986775736],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_85a663b109e245778683833598462f81.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_35b36548cd2f4ef1b85b1a46f1984f37 = L.marker(
+            [40.745249427, -73.944279995],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_35b36548cd2f4ef1b85b1a46f1984f37.bindTooltip(
+            `<div>`
+            + `PETIT LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4572186c07034c04b570f5a779c6dafc = L.marker(
+            [40.756340719, -73.869340997],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_4572186c07034c04b570f5a779c6dafc.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8f5e1603683d454db90a935d861f186d = L.marker(
+            [40.690620621, -73.862668958],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_8f5e1603683d454db90a935d861f186d.bindTooltip(
+            `<div>`
+            + `BURGLARY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ad0653601e1940ffb853194ddedb684c = L.marker(
+            [40.656695524, -73.910338337],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_ad0653601e1940ffb853194ddedb684c.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_adb15b59eb2e4bc59b974b00bf69c53f = L.marker(
+            [40.574966816999996, -74.119479172],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_adb15b59eb2e4bc59b974b00bf69c53f.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0c1194927e3e4fada67bf8174d4cf36c = L.marker(
+            [40.676738205999996, -73.980248582],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_0c1194927e3e4fada67bf8174d4cf36c.bindTooltip(
+            `<div>`
+            + `BURGLARY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d9449fdf703b4d149851f5348eb19e6f = L.marker(
+            [40.862413323, -73.831208468],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_d9449fdf703b4d149851f5348eb19e6f.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2e480666211d4762a08b81029440cc1f = L.marker(
+            [40.755866754, -73.925927745],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_2e480666211d4762a08b81029440cc1f.bindTooltip(
+            `<div>`
+            + `THEFT-FRAUD` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2b743ae79e0946eba63918739fd735a5 = L.marker(
+            [40.885946223000005, -73.85981346],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_2b743ae79e0946eba63918739fd735a5.bindTooltip(
+            `<div>`
+            + `OFFENSES AGAINST PUBLIC ADMINI` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3b83950a22cd468ba5c61b4b1de3effd = L.marker(
+            [40.662518015, -73.927011804],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_3b83950a22cd468ba5c61b4b1de3effd.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_50130326f9a042e8ba08087352065126 = L.marker(
+            [40.734025223, -73.804850298],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_50130326f9a042e8ba08087352065126.bindTooltip(
+            `<div>`
+            + `CRIMINAL MISCHIEF & RELATED OF` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_47e6714edbdc479ea7fa510208f3c206 = L.marker(
+            [40.729939364, -73.810433142],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_47e6714edbdc479ea7fa510208f3c206.bindTooltip(
+            `<div>`
+            + `CRIMINAL MISCHIEF & RELATED OF` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_20284a3a340144908b71264b3a74e759 = L.marker(
+            [40.698033928, -73.975287153],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_20284a3a340144908b71264b3a74e759.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_837d6300e9d74837b4b6605a0182471d = L.marker(
+            [40.807085412, -73.943830883],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_837d6300e9d74837b4b6605a0182471d.bindTooltip(
+            `<div>`
+            + `PETIT LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a08c8383374e4692a3887d7523169299 = L.marker(
+            [40.871191678, -73.900322785],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_a08c8383374e4692a3887d7523169299.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b9b85f59134249e2a2fd7bc7e7ab86e9 = L.marker(
+            [40.845751205999996, -73.921924155],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_b9b85f59134249e2a2fd7bc7e7ab86e9.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fc665aff586c4433939489167d437dcf = L.marker(
+            [40.682452827, -73.872792017],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_fc665aff586c4433939489167d437dcf.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bdbeb844247845938602348fded31b5c = L.marker(
+            [40.791151866999996, -73.884371919],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_bdbeb844247845938602348fded31b5c.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b9f878477e2b4f53a83a2d05a0752aa6 = L.marker(
+            [40.831587260999996, -73.876532434],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_b9f878477e2b4f53a83a2d05a0752aa6.bindTooltip(
+            `<div>`
+            + `CRIMINAL MISCHIEF & RELATED OF` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a9601faa7d5646a4af42abd7bafc7d2a = L.marker(
+            [40.821284436999996, -73.917418512],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_a9601faa7d5646a4af42abd7bafc7d2a.bindTooltip(
+            `<div>`
+            + `OFF. AGNST PUB ORD SENSBLTY &` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3eab61d3380e4392a68cb155ed5d3111 = L.marker(
+            [40.706105106, -73.901363123],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_3eab61d3380e4392a68cb155ed5d3111.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9e128f722d8041f098443590c3909013 = L.marker(
+            [40.773206246, -73.985577834],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_9e128f722d8041f098443590c3909013.bindTooltip(
+            `<div>`
+            + `ASSAULT 3 & RELATED OFFENSES` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4a8636f30e0c454a9c125b9878b479fa = L.marker(
+            [40.688864298, -73.978488942],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_4a8636f30e0c454a9c125b9878b479fa.bindTooltip(
+            `<div>`
+            + `GRAND LARCENY` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9f2b6f15b7c649728f64f403defc5709 = L.marker(
+            [40.818789441999996, -73.888077695],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc538b209b746988e9dbdbad0889dc9);
+        
+    
+        marker_9f2b6f15b7c649728f64f403defc5709.bindTooltip(
+            `<div>`
+            + `HARRASSMENT 2` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
